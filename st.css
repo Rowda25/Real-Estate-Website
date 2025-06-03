@@ -1,0 +1,168 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.property-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.property {
+    width: 30%;
+    text-align: center;
+}
+
+.property img {
+    width: 100%;
+    height: auto;
+}
+
+.property a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.property-card {
+    margin: 20px;
+    text-align: center;
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Continue from previous CSS */
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.about, .contact {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.property-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.property-card p {
+    color: #888;
+}
+
+.property-card strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .property-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .properties-preview .property-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property-card {
+        width: 90%;
+    }
+}
